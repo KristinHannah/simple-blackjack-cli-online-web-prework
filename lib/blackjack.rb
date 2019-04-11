@@ -38,7 +38,7 @@ def hit?(card_total)
     card_total = card_total + deal_card 
   elsif answer == 's'
     return card_total
-  else answer != 'h' || answer != 's'
+  else 
     invalid_command 
      prompt_user
   end
@@ -52,7 +52,6 @@ require 'pry'
 
 def runner
   welcome 
-  initial_round
   card_total = initial_round
   until card_total > 21
   hit?(card_total)
