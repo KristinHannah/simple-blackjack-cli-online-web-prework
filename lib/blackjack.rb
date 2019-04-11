@@ -48,8 +48,6 @@ def invalid_command
   puts "Please enter a valid command."
 end
 
-require 'pry'
-
 def runner
   welcome 
   card_total = initial_round
