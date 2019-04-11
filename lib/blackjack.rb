@@ -62,7 +62,7 @@ def runner
     prompt_user
     hit?(card_total)
   elsif answer == 'h'
-    new_total = card_total + deal_card
+    card_total = card_total + deal_card
     display_card_total(card_total)
     hit?(card_total)
   end
